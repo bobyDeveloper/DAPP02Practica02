@@ -19,11 +19,11 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "empleados")
 public class Empleado {
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "empleados_clave_seq")
-    @SequenceGenerator(name = "empleados_clave_seq", sequenceName = "empleados_clave_seq", initialValue = 1, allocationSize = 1)
-    @Column(name = "clave")
-    private Long clave;
+@Id
+@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "empleados_clave_seq")
+@SequenceGenerator(name = "empleados_clave_seq", sequenceName = "empleados_clave_seq", initialValue = 1, allocationSize = 1)
+@Column(name = "clave")
+private Long clave;
 
     @Column(name = "nombre")
     private String nombre;
